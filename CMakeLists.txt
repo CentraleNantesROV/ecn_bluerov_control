@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ecn_bluerov_control)
+project(blurr_control)
 
-add_compile_options(-std=c++11)
+set(CMAKE_CXX_STANDARD 11)
 
 find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES ecn_bluerov_control
+#  LIBRARIES blurr_control
 #  CATKIN_DEPENDS   sensor_msgs  nav_msgs  roscpp
 #  DEPENDS system_lib
 )
@@ -24,4 +24,3 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
-
